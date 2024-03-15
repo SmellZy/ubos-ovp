@@ -1,0 +1,396 @@
+[
+    {
+        "_id": "65d624978e386968ec1e2750",
+        "applicationId": "uieditor",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "create",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "https://nodered-0657-65d8677db8bdbd1200000058.platform.ubos.tech"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/api/create",
+                "body": "{\n\t\"name\": {{JSON.stringify(productNameCreate.text)}},\n\t\"price\": {{JSON.stringify(productPriceCreate.text)}},\n\t\"rating\": {{JSON.stringify(ratingCreate.value)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "JSON.stringify(productNameCreate.text)",
+                "JSON.stringify(productPriceCreate.text)",
+                "JSON.stringify(ratingCreate.value)",
+                "JSON.stringify(Date())"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-02-21T16:28:07.851Z",
+        "updatedAt": "2024-02-23T11:03:53.845Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65d628e18e386968ec1e2751",
+        "applicationId": "uieditor",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "read",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "65d8677db8bdbd1200000058",
+                    "url": "https://nodered-0657-65d8677db8bdbd1200000058.platform.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "nodered-0657-ubos-pm54c-nodered-0657"
+                },
+                "id": "65d867bdb8bdbd120000005c",
+                "invalids": [],
+                "isValid": true,
+                "name": "nodered-0657",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "nodered-0657",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://nodered-0657-65d8677db8bdbd1200000058.platform.ubos.tech",
+                    "serviceId": "nodered-0657-ubos-pm54c-nodered-0657",
+                    "applicationId": "65d8677db8bdbd1200000059",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/api/read",
+                "body": ""
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "path"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-02-21T16:46:25.859Z",
+        "updatedAt": "2024-02-23T10:58:24.948Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65d85277d0c2c0afe812f0ef",
+        "applicationId": "uieditor",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "update",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "65d8677db8bdbd1200000058",
+                    "url": "https://nodered-0657-65d8677db8bdbd1200000058.platform.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "nodered-0657-ubos-pm54c-nodered-0657"
+                },
+                "id": "65d867bdb8bdbd120000005c",
+                "invalids": [],
+                "isValid": true,
+                "name": "nodered-0657",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "nodered-0657",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://nodered-0657-65d8677db8bdbd1200000058.platform.ubos.tech",
+                    "serviceId": "nodered-0657-ubos-pm54c-nodered-0657",
+                    "applicationId": "65d8677db8bdbd1200000059",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "PUT",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/api/put",
+                "body": "{\n\t\"_id\": {{JSON.stringify(table.selectedRow._id)}},\n\t\"name\": {{JSON.stringify(inputProductUpdateContainer.text)}},\n\t\"price\": {{JSON.stringify(priceInputUpdateContainer.text)}},\n\t\"rating\": {{JSON.stringify(ratingUpdateContainer.value)}},\n\t\"createDate\": {{JSON.stringify(table.selectedRow.createDate)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "JSON.stringify(table.selectedRow._id)",
+                "JSON.stringify(inputProductUpdateContainer.text)",
+                "JSON.stringify(priceInputUpdateContainer.text)",
+                "JSON.stringify(ratingUpdateContainer.value)",
+                "JSON.stringify(table.selectedRow.createDate)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-02-23T08:08:23.063Z",
+        "updatedAt": "2024-02-23T12:23:29.704Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65d87ef8869e8f5ffc00a900",
+        "applicationId": "uieditor",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "del",
+            "datasource": {
+                "datasourceConfiguration": {
+                    "orgId": "65d8677db8bdbd1200000058",
+                    "url": "https://nodered-0657-65d8677db8bdbd1200000058.platform.ubos.tech",
+                    "product_price": null,
+                    "cpu": 250,
+                    "ram": 512,
+                    "subscription_plan": "65095119f74e030011361ae3",
+                    "plan_id": "65095119f74e030011361ae3",
+                    "subscription_id": null,
+                    "serviceId": "nodered-0657-ubos-pm54c-nodered-0657"
+                },
+                "id": "65d867bdb8bdbd120000005c",
+                "invalids": [],
+                "isValid": true,
+                "name": "nodered-0657",
+                "new": false,
+                "type": "api",
+                "organizationId": "Org",
+                "pluginId": "API",
+                "userPermissions": [
+                    "read:service",
+                    "manage:service"
+                ],
+                "settings_data": {
+                    "gitName": "",
+                    "projectName": "nodered-0657",
+                    "systemType": "latest",
+                    "gitUrl": "",
+                    "gitPassword": "",
+                    "urlNodeRed": "https://nodered-0657-65d8677db8bdbd1200000058.platform.ubos.tech",
+                    "serviceId": "nodered-0657-ubos-pm54c-nodered-0657",
+                    "applicationId": "65d8677db8bdbd1200000059",
+                    "env": [],
+                    "status": "ready"
+                }
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "DELETE",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"_id\": {{JSON.stringify(table.selectedRow._id)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/api/delete"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "JSON.stringify(table.selectedRow._id)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-02-23T11:18:16.594Z",
+        "updatedAt": "2024-02-23T11:18:46.826Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    }
+]
