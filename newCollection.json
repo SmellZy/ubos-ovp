@@ -1,1 +1,58 @@
-[]
+[
+    {
+        "id": "65fd65b9df7425606b349c2e",
+        "name": "JSObject1",
+        "pageId": "Company",
+        "body": "export default {\n\topenJobs: async (cmpId) => {\n\t\tconst company_id = appsmith.store.company_id || [];\n\t\tcompany_id.push(cmpId);\n\t\tstoreValue('company_id', cmpId);\n\t\tshowAlert('Company ID stored succesfully', 'success');\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "name": "openJobs",
+                "collectionId": "65fd65b9df7425606b349c2e",
+                "executeOnLoad": false,
+                "pageId": "Company",
+                "actionConfiguration": {
+                    "body": "async (cmpId) => {\n\t\tconst company_id = appsmith.store.company_id || [];\n\t\tcompany_id.push(cmpId);\n\t\tstoreValue('company_id', cmpId);\n\t\tshowAlert('Company ID stored succesfully', 'success');\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [
+                        {
+                            "name": "cmpId"
+                        }
+                    ],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "66068df1df7425606b349c39",
+                "id": "66068df1df7425606b349c39",
+                "applicationId": "uieditor",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.openJobs",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async (cpm) => {\n\t\tconst company_id = appsmith.store.company_id || []\n\t\tcompany_id.push(c)\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "uieditor",
+        "pluginType": "JS",
+        "_id": "65fd65b9df7425606b349c2e",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    }
+]
